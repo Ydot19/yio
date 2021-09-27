@@ -13,8 +13,8 @@
     },
     "husky": {
         "hooks": {
-            "pre-commit": "echo \"[Husky] pre-commit stage\" && pnpm pretty",
-            "prepare-commit-msg": "echo \"[Husky] pre-commit stage\" &&pnpm lint",
+            "pre-commit": "echo \"pre-commit stage\" && pnpm pretty",
+            "prepare-commit-msg": "echo \"pre-commit-msg stage\" && pnpm lint",
             "commit-msg": "node ./scripts/verify-commit-msg.js"
         }
     },
@@ -50,7 +50,7 @@
         "eslint": "^7.32.0",
         "eslint-config-prettier": "^8.3.0",
         "eslint-plugin-prettier": "^4.0.0",
-        "husky": "4.3.8",
+        "husky": "6",
         "jest": "^27.2.2",
         "jest-preset-angular": "^10.0.0",
         "mini-css-extract-plugin": "^2.3.0",
