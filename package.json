@@ -4,13 +4,16 @@
     "license": "MIT",
     "version": "0.0.0",
     "scripts": {
-        "start": "ng serve",
-        "build": "ng build",
-        "watch": "ng build --watch --configuration development",
-        "test": "jest",
-        "pretty": "prettier --write ./src",
-        "lint:ts": "eslint ./src --ext .ts --fix",
-        "lint:css": "stylelint '**/*.css' --syntax css --fix --allow-empty-input"
+      "start": "ng serve",
+      "build": "ng build",
+      "watch": "ng build --watch --configuration development",
+      "test": "jest",
+      "pretty": "prettier --write ./src",
+      "lint:ts": "eslint ./src --ext .ts --fix",
+      "lint:css": "stylelint '**/*.css' --syntax css --fix --allow-empty-input",
+      "e2e": "ng e2e",
+      "cypress:open": "cypress open",
+      "cypress:run": "cypress run"
     },
     "husky": {
         "hooks": {
@@ -49,6 +52,7 @@
         "@angular-devkit/build-angular": "~12.2.7",
         "@angular/cli": "~12.2.7",
         "@angular/compiler-cli": "~12.2.0",
+        "@cypress/schematic": "1.5.1",
         "@types/jest": "^27.0.2",
         "@types/node": "^12.11.1",
         "@types/prettier": "^2.4.0",
@@ -70,6 +74,7 @@
         "prettier": "^2.4.1",
         "stylelint": "^13.13.1",
         "stylelint-config-standard": "^22.0.0",
-        "typescript": "~4.3.5"
+        "typescript": "~4.3.5",
+        "cypress": "8.5.0"
     }
 }
