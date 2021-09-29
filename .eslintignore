@@ -1,0 +1,11 @@
+node_modules
+dist
+jest.config.js
+webpack.config.js
+setup-jest.ts
+scripts
+.github
+fixtures
+coverage
+.idea
+__snapshots__
