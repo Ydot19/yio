@@ -8,4 +8,5 @@ scripts
 fixtures
 coverage
 .idea
+cypress
 __snapshots__
