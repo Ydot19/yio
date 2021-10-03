@@ -1,0 +1,15 @@
+:root {
+  --colorTheme-yellow: #faed26;
+  --colorTheme-dark-yellow: #d79922;
+  --colorTheme-purple: #46344e;
+  --colorTheme-gray: #5a5560;
+  --colorTheme-light-gray: #747474;
+  --colorTheme-cloudWhite: #faf9f5;
+  --colorTheme-textBlack: #272727;
+  --colorTheme-light-purple: #9d8d8f;
+  --colorTheme-mud: #9b786f;
+}
+
+a:link {
+  color: inherit;
+}
