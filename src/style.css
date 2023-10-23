@@ -1,0 +1,61 @@
+@import url('https://unpkg.com/@catppuccin/palette/css/catppuccin.css');
+
+@font-face {
+  font-family: 'JetBrains Mono Thin';
+  src: url('./assets/fonts/JetBrainsMono-Thin.ttf')
+}
+
+@font-face {
+  font-family: 'JetBrains Mono ThinItalic';
+  src: url('./assets/fonts/JetBrainsMono-ThinItalic.ttf')
+}
+
+@font-face {
+  font-family: 'JetBrains Mono Medium';
+  src: url('./assets/fonts/JetBrainsMono-Medium.ttf')
+}
+
+@font-face {
+  font-family: 'JetBrains Mono MediumItalic';
+  src: url('./assets/fonts/JetBrainsMono-MediumItalic.ttf')
+}
+
+@font-face {
+  font-family: 'JetBrains Mono Bold';
+  src: url('./assets/fonts/JetBrainsMono-Bold.ttf')
+}
+
+@font-face {
+  font-family: 'JetBrains Mono BoldItalic';
+  src: url('./assets/fonts/JetBrainsMono-BoldItalic.ttf')
+}
+
+.text-font-family-thin {
+  font-family: 'JetBrains Mono Thin', sans-serif;
+}
+
+.text-font-family-thin-italic {
+  font-family: 'JetBrains Mono ThinItalic', sans-serif;
+}
+
+.text-font-family-medium {
+  font-family: 'JetBrains Mono Medium', sans-serif;
+}
+
+.text-font-family-medium-italic {
+  font-family: 'JetBrains Mono MediumItalic', sans-serif;
+}
+
+.text-font-family-bold {
+  font-family: 'JetBrains Mono Bold', sans-serif;
+}
+
+.text-font-family-bold-italic {
+  font-family: 'JetBrains Mono BoldItalic', sans-serif;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+
