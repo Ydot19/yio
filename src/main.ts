@@ -16,12 +16,12 @@ const routes = [
     },
 ]
 
-const router = new createRouter(
+const router = createRouter(
     {
         history: createWebHistory(),
         routes: routes
     }
-)
+);
 
 const app = createApp(App) ;
 app.component('Typewriter', Typewriter)
