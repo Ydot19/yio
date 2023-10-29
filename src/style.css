@@ -58,4 +58,15 @@
   text-align: center;
 }
 
+/*Color Palette Light*/
+
+:root {
+  --background: #333533;
+  --accent: #242423;
+  --highlight: #f5cb5c;
+  --font-color-light: #e8eddf;
+  --font-color-medium: #cfdbd5;
+  --font-color-dark: #6c757d;
+}
+
 

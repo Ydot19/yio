@@ -1,5 +1,6 @@
 <template>
-  <div class="p-0 m-0">
+  <div class="p-0 m-0 h-screen main-div">
+    <NavBar></NavBar>
     <router-view />
   </div>
 </template>
@@ -11,7 +12,16 @@ export default {
 </script>
 
 <script setup>
+import NavBar from "@/layout/NavBar.vue";
 </script>
 
 <style>
+
+.main-div {
+  background: var(--background);
+}
+
+p, div, li, ul {
+  color: var(--font-color-light);
+}
 </style>
