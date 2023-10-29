@@ -11,7 +11,7 @@
 
 @media screen and (max-width: 500px) {
   #in-progress-img {
-    transform: scale(0.75);
+    transform: scale(0.50);
   }
 }
 
