@@ -16,7 +16,8 @@ export default {
 <style scoped>
 .typewriter-effect {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid #ee99a0; /* The typwriter cursor */
+  border-right: .15em solid; /* The typwriter cursor */
+  border-right-color: var(--highlight);
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
@@ -34,6 +35,6 @@ export default {
 /* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  50% { border-color: #ee99a0; }
+  50% { border-color: var(--highlight); }
 }
 </style>
