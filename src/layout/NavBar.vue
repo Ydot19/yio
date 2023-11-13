@@ -2,7 +2,7 @@
   <div class="card sticky" id="navbar">
     <Menubar :model="items" class="h-full">
       <template #start>
-        <img alt="logo" src="/logo_clear.svg" height="35" class="mr-2" />
+        <img alt="logo" src="/src/assets/images/logo-v2.svg" height="35" class="mr-2" />
       </template>
       <template #item="{ label, item, props }">
           <router-link v-if="item.url" v-slot:default="routerProps" :to="item.url" >
