@@ -1,18 +1,32 @@
-# Vue 3 + TypeScript + Vite
+# Blog Website
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## Architecture Diagram
 
-## Recommended IDE Setup
+![architecture](./docs/resources/architecture.png)
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+### (A) Website
 
-## Type Support For `.vue` Imports in TS
+Component is deployed from src to netlify. Netlify then deploys the app to `https://www.yaadata.dev`
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+### (B) Web Backend
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+Serverless deno based app that serves only READ requests from the website
 
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+### (C) Storage Layer
+
+Storage layer is broken up into two parts
+
+Part A.) Relation Database - Storing correlated data within the website and admin panel. 
+
+Part B.) Document / Media Storage for Blog Content and other pieces of media
+
+
+### (D) Admin Panel
+
+Currently, the admin panel is an offline UI that allows the author (myself) to create/edit/delete content on the website.
+
+### (E) Social Authentication
+
+Authentication is delegated to sign in to the email of the admin.
+
+
